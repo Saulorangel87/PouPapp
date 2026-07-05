@@ -11,7 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-link/anotacoes
+link
 
 # Editor directories and files
 .vscode/*
