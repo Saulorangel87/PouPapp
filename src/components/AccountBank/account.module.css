@@ -1,0 +1,57 @@
+.account {
+  display: flex;
+  justify-content: space-between;
+  color: var(--neutral-text);
+}
+
+.account p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 120%;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100px;
+}
+
+.bank {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list li {
+  border-bottom: 1px solid var(--neutral-header);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.list li:last-child {
+  border: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.accounts {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.divider {
+  flex-grow: 1;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}

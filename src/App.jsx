@@ -9,8 +9,36 @@ import { DailyBudget } from "./components/DailyBudget";
 import { SavingsStatus } from "./components/SavingsStatus";
 import styles from "./app.module.css";
 import { Transactions } from "./components/Transactions";
+import { Account } from "./components/AccountBank";
 
 function App() {
+  const transactions = [
+    {
+      description: "iFood",
+      value: -20,
+      date: "2024-10-01T00:00:00-03:00",
+      account: "Anybank",
+    },
+    {
+      description: "Papelaria Mila",
+      value: -80,
+      date: "2024-10-03T00:00:00-03:00",
+      account: "Bytebank",
+    },
+    {
+      description: "Freela (2ª parte)",
+      value: 1000,
+      date: "2024-10-03T00:00:00-03:00",
+      account: "Anybank",
+    },
+    {
+      description: "Magazine Luiza",
+      value: -300,
+      date: "2024-10-05T00:00:00-03:00",
+      account: "Switch Bank",
+    },
+  ];
+
   return (
     <Container>
       <Aside />
@@ -39,12 +67,14 @@ function App() {
             <Card>
               <Card.Header>Movimentação financeira</Card.Header>
               <Card.Body>
-                <Transactions />
+                <Transactions items={transactions} />
               </Card.Body>
             </Card>
             <Card>
               <Card.Header>Minhas contas:</Card.Header>
-              <Card.Body>R$ 200</Card.Body>
+              <Card.Body>
+                <Account transactions={transactions} />
+              </Card.Body>
             </Card>
           </section>
         </div>
