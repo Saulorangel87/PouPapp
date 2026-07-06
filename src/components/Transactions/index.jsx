@@ -32,22 +32,20 @@ export const Transactions = () => {
 
   return (
     <>
-    <ul className={styles.list}>
- {items.map((transactionItem, index) => {
-
-        return (
+      <ul className={styles.list}>
+        {items.map((transactionItem, index) => {
+          return (
             <li key={index}>
-                <TransactionItem item={transactionItem} />
+              <TransactionItem item={transactionItem} />
             </li>
-        )
-     })}
-
-    </ul>
-
-    <Button>
-        <IconCurrency /> Adicionar transação
-    </Button>
-    
+          );
+        })}
+      </ul>
+      <div className={styles.actions}>
+        <Button>
+          <IconCurrency /> Adicionar transação
+        </Button>
+      </div>
     </>
-  )
+  );
 };
