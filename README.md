@@ -1,16 +1,32 @@
-# React + Vite
+# PouPapp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PouPapp é uma aplicação web de controle financeiro pessoal desenvolvida em React. O projeto apresenta um painel simples para visualizar informações financeiras do usuário, como orçamento diário disponível, progresso de meta financeira, movimentações recentes e saldo por conta bancária.
 
-Currently, two official plugins are available:
+A interface é organizada em componentes reutilizáveis, como cards, barra lateral, botões, campo de busca, lista de transações, contas bancárias, barra de progresso e elementos tipográficos. Os dados financeiros usados atualmente estão definidos diretamente no código, servindo como base inicial para simular entradas, saídas e saldos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Funcionalidades
 
-## React Compiler
+- Exibição de orçamento diário disponível
+- Acompanhamento do progresso de uma meta financeira
+- Listagem de movimentações financeiras
+- Diferenciação visual entre receitas e despesas
+- Cálculo de saldo por conta bancária
+- Interface componentizada e responsiva
+- Formatação de valores em Real brasileiro
+- Formatação de datas no padrão brasileiro
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologias utilizadas
 
-## Expanding the ESLint configuration
+- React: construção da interface com componentes
+- Vite: ambiente de desenvolvimento e build do projeto
+- JavaScript / JSX: lógica e estrutura dos componentes
+- CSS Modules: estilização isolada por componente
+- HTML e CSS: base visual da aplicação
+- ESLint: padronização e análise do código
+- npm: gerenciamento de dependências e scripts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Como executar o projeto
+
+```bash
+npm install
+npm run dev
